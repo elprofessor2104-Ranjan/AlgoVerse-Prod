@@ -4,7 +4,7 @@ import Header from "@/app/components/layout/header";
 import Footer from "@/app/components/layout/footer";
 import { Providers } from "@/providers/sessionProviders";
 import ScrollToTop from "./components/ScrollToTop";
-import Script from "next/script";
+// import Script from "next/script";
 const manrope = Manrope({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
+      {/* <head>
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-CDP9TRJP5E"
@@ -39,7 +39,7 @@ export default function RootLayout({
             gtag('config', 'G-CDP9TRJP5E');
           `}
         </Script>
-      </head>
+      </head> */}
 
       <body className={manrope.className}>
         <Providers>
