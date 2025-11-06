@@ -40,7 +40,6 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-
       <body className={manrope.className}>
         <Providers>
           <Header />
