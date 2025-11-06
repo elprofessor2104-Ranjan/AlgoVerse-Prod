@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { getBlogsBySlug } from "@/lib/blogmarkdown";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: any) {
   const blog = getBlogsBySlug(params.slug, [
     "tag",
     "title",
@@ -63,7 +64,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPost({ params }: any) {
   const blog = getBlogsBySlug(params.slug, [
     "tag",
     "title",
