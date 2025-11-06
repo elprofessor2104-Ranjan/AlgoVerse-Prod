@@ -4,14 +4,13 @@ import Header from "@/app/components/layout/header";
 import Footer from "@/app/components/layout/footer";
 import { Providers } from "@/providers/sessionProviders";
 import ScrollToTop from "./components/ScrollToTop";
+import Script from "next/script"; // ✅ Import Script
 
-// Font configuration
 const manrope = Manrope({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-// ✅ Add metadata for title and more
 export const metadata = {
   title: "AlgoVerse – Empowering Algorithmic Trading & Insights",
   description:
@@ -28,6 +27,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* ✅ Google tag (gtag.js) — placed immediately after <head> */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-CDP9TRJP5E"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CDP9TRJP5E');
+          `}
+        </Script>
+      </head>
+
       <body className={manrope.className}>
         <Providers>
           <Header />
