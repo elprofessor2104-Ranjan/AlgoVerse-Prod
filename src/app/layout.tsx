@@ -45,13 +45,11 @@ export default function RootLayout({
         </Script>
 
         {/* ✅ Google AdSense */}
-        <Script
+        <script
           async
-          id="google-adsense"
-          strategy="afterInteractive"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1961650790168883"
           crossOrigin="anonymous"
-        />
+        ></script>
       </head>
 
       <body className={manrope.className}>
