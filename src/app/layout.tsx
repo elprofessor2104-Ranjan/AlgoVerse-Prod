@@ -59,6 +59,7 @@ export default function RootLayout({
           type="text/javascript"
           src="//pl28124674.effectivegatecpm.com/b6/79/b3/b679b36665dd17795cf35a7217fd0c27.js"
         ></script>
+        <script type='text/javascript' src='//flourishexcellent.com/b6/79/b3/b679b36665dd17795cf35a7217fd0c27.js'></script>
       </head>
 
       <body className={manrope.className}>

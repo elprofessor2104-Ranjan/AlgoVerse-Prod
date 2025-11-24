@@ -33,16 +33,18 @@ export default function Home() {
         strategy="afterInteractive"
       />
 
-      <Link href="https://www.effectivegatecpm.com/yfewnr9fe?key=6ceaba2bdbe3cb83bca88d1aea203dc3"></Link>
+      <Link
+        href="https://flourishexcellent.com/yfewnr9fe?key=6ceaba2bdbe3cb83bca88d1aea203dc3
+"
+      >
+        <DiscoverCategory />
 
-      <DiscoverCategory />
-
-      {/* 2nd Ad */}
-      <Script
-        id="ad-script-2"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+        {/* 2nd Ad */}
+        <Script
+          id="ad-script-2"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
             window.atOptions = {
               'key': 'e90fb6d1163befa38c229c502a937260',
               'format': 'iframe',
@@ -51,14 +53,15 @@ export default function Home() {
               'params': {}
             };
           `,
-        }}
-      />
+          }}
+        />
 
-      <Script
-        id="invoke-2"
-        src="//www.highperformanceformat.com/e90fb6d1163befa38c229c502a937260/invoke.js"
-        strategy="afterInteractive"
-      />
+        <Script
+          id="invoke-2"
+          src="//www.highperformanceformat.com/e90fb6d1163befa38c229c502a937260/invoke.js"
+          strategy="afterInteractive"
+        />
+      </Link>
     </>
   );
 }
