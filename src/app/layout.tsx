@@ -63,7 +63,20 @@ export default function RootLayout({
       </head>
 
       <body className={manrope.className}>
-         <script
+        <script
+          async
+          data-cfasync="false"
+          src="//pl28124693.effectivegatecpm.com/5a3556850b126959b2a3d096ed85e373/invoke.js"
+        ></script>
+        <script
+          async
+          data-cfasync="false"
+          src="//pl28124693.effectivegatecpm.com/5a3556850b126959b2a3d096ed85e373/invoke.js"
+        ></script>
+        <Providers>
+          <Header />
+          {children}
+          <script
           type="text/javascript"
           dangerouslySetInnerHTML={{
             __html: `
@@ -81,25 +94,11 @@ export default function RootLayout({
           type="text/javascript"
           src="//www.highperformanceformat.com/7cfc9f717089fffb351d015f6c3746da/invoke.js"
         />
-        
-        <script
-          async
-          data-cfasync="false"
-          src="//pl28124693.effectivegatecpm.com/5a3556850b126959b2a3d096ed85e373/invoke.js"
-        ></script>
-        <script
-          async
-          data-cfasync="false"
-          src="//pl28124693.effectivegatecpm.com/5a3556850b126959b2a3d096ed85e373/invoke.js"
-        ></script>
-        <Providers>
-          <Header />
-          {children}
+        <Footer />
           <script
             type="text/javascript"
             src="//pl28124988.effectivegatecpm.com/c0/0e/f1/c00ef14df342a48656e7296180463ed2.js"
           ></script>
-          <Footer />
           <ScrollToTop />
         </Providers>
       </body>
