@@ -26,7 +26,7 @@ const Footer = () => {
         <div className="container">
           <div className="flex flex-col md:flex-row gap-3 items-center text-center justify-between py-8 border-b border-gray">
             <p className="text-navyGray dark:text-white/80">
-              © Amresh M - All Rights Reserved, Created by
+              © EL - All Rights Reserved, Created by
               <Link
                 href={"https://amresh-portfolio-v2.vercel.app/"}
                 className="hover:text-primary"

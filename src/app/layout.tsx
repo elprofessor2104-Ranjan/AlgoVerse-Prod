@@ -75,10 +75,13 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
+          <script
+            type="text/javascript"
+            src="//pl28124988.effectivegatecpm.com/c0/0e/f1/c00ef14df342a48656e7296180463ed2.js"
+          ></script>
           <Footer />
           <ScrollToTop />
         </Providers>
-        <script type='text/javascript' src='//pl28124988.effectivegatecpm.com/c0/0e/f1/c00ef14df342a48656e7296180463ed2.js'></script>
       </body>
     </html>
   );
