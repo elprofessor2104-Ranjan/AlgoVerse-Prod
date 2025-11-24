@@ -63,9 +63,8 @@ export default function RootLayout({
       </head>
 
       <body className={manrope.className}>
-         <Script
-          id="atOptions"
-          strategy="afterInteractive"
+         <script
+          type="text/javascript"
           dangerouslySetInnerHTML={{
             __html: `
               window.atOptions = {
@@ -78,11 +77,12 @@ export default function RootLayout({
             `,
           }}
         />
-        <Script
+        <script
+          type="text/javascript"
           src="//www.highperformanceformat.com/7cfc9f717089fffb351d015f6c3746da/invoke.js"
-          strategy="afterInteractive"
         />
-        <div id="7cfc9f717089fffb351d015f6c3746da"></div>
+
+        
         <script
           async
           data-cfasync="false"
