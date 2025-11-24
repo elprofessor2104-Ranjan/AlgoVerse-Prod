@@ -81,7 +81,7 @@ export default function RootLayout({
           src="//www.highperformanceformat.com/7cfc9f717089fffb351d015f6c3746da/invoke.js"
           strategy="afterInteractive"
         />
-        
+        <div id="7cfc9f717089fffb351d015f6c3746da"></div>
         <script
           async
           data-cfasync="false"
