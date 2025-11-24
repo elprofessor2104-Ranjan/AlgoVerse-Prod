@@ -89,21 +89,7 @@ export default async function BlogPost({ params }: any) {
 
   return (
     <section>
-      <Script id="atOptions" strategy="afterInteractive">
-                {`
-                    atOptions = {
-                      'key' : '7cfc9f717089fffb351d015f6c3746da',
-                      'format' : 'iframe',
-                      'height' : 250,
-                      'width' : 300,
-                      'params' : {}
-                    };
-                  `}
-              </Script>
-              <Script
-                src="//www.highperformanceformat.com/7cfc9f717089fffb351d015f6c3746da/invoke.js"
-                strategy="afterInteractive"
-              />
+      
       <div className="pb-14 md:pb-20 pt-28 md:pt-40 dark:bg-baseInk">
         <div className="container">
           <div className=" shadow-md">
