@@ -62,21 +62,26 @@ export default function RootLayout({
       </head>
 
       <body className={manrope.className}>
-        <Script id="atOptions" strategy="afterInteractive">
-                        {`
-                            atOptions = {
-                              'key' : '7cfc9f717089fffb351d015f6c3746da',
-                              'format' : 'iframe',
-                              'height' : 250,
-                              'width' : 300,
-                              'params' : {}
-                            };
-                          `}
-                      </Script>
-                      <Script
-                        src="//www.highperformanceformat.com/7cfc9f717089fffb351d015f6c3746da/invoke.js"
-                        strategy="afterInteractive"
-                      />
+         <Script
+          id="atOptions"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.atOptions = {
+                'key': '7cfc9f717089fffb351d015f6c3746da',
+                'format': 'iframe',
+                'height': 250,
+                'width': 300,
+                'params': {}
+              };
+            `,
+          }}
+        />
+        <Script
+          src="//www.highperformanceformat.com/7cfc9f717089fffb351d015f6c3746da/invoke.js"
+          strategy="afterInteractive"
+        />
+        
         <script
           async
           data-cfasync="false"
