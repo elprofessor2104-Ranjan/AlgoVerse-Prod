@@ -82,7 +82,7 @@ export default function RootLayout({
           src="//www.highperformanceformat.com/7cfc9f717089fffb351d015f6c3746da/invoke.js"
         />
 
-        
+
         <script
           async
           data-cfasync="false"
