@@ -67,34 +67,18 @@ export default function RootLayout({
           data-cfasync="false"
           src="//pl28124693.effectivegatecpm.com/5a3556850b126959b2a3d096ed85e373/invoke.js"
         ></script>
-        <div id="container-5a3556850b126959b2a3d096ed85e373"></div>
         <script
           async
           data-cfasync="false"
           src="//pl28124693.effectivegatecpm.com/5a3556850b126959b2a3d096ed85e373/invoke.js"
         ></script>
-        <div id="container-5a3556850b126959b2a3d096ed85e373"></div>
         <Providers>
           <Header />
           {children}
-          <Script id="atOptions" strategy="afterInteractive">
-            {`
-  atOptions = {
-    'key' : 'e90fb6d1163befa38c229c502a937260',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };
-`}
-          </Script>
-          <Script
-            src="//www.highperformanceformat.com/e90fb6d1163befa38c229c502a937260/invoke.js"
-            strategy="afterInteractive"
-          />
           <Footer />
           <ScrollToTop />
         </Providers>
+        <script type='text/javascript' src='//pl28124988.effectivegatecpm.com/c0/0e/f1/c00ef14df342a48656e7296180463ed2.js'></script>
       </body>
     </html>
   );

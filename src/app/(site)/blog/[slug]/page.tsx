@@ -3,6 +3,7 @@ import { getBlogsBySlug } from "@/lib/blogmarkdown";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 
 export async function generateMetadata({ params }: any) {
   const blog = getBlogsBySlug(params.slug, [
@@ -148,6 +149,38 @@ export default async function BlogPost({ params }: any) {
                   </div>
                 </div>
               </div>
+              <Script id="atOptions" strategy="afterInteractive">
+                {`
+                    atOptions = {
+                      'key' : '7cfc9f717089fffb351d015f6c3746da',
+                      'format' : 'iframe',
+                      'height' : 250,
+                      'width' : 300,
+                      'params' : {}
+                    };
+                  `}
+              </Script>
+              <Script
+                src="//www.highperformanceformat.com/7cfc9f717089fffb351d015f6c3746da/invoke.js"
+                strategy="afterInteractive"
+              />
+
+              <Script id="atOptions" strategy="afterInteractive">
+                {`
+                    atOptions = {
+                      'key' : '04080a1a59066b0cd1c95a29b84e4aaa',
+                      'format' : 'iframe',
+                      'height' : 50,
+                      'width' : 320,
+                      'params' : {}
+                    };
+                  `}
+              </Script>
+              <Script
+                src="//www.highperformanceformat.com/04080a1a59066b0cd1c95a29b84e4aaa/invoke.js"
+                strategy="afterInteractive"
+              />
+
               <div className="flex flex-col p-6 gap-7">
                 <div className="flex flex-col gap-5 border-b border-gray-200 dark:border-white/20 pb-7">
                   <h3 className="font-semibold text-navyGray dark:text-white">
@@ -157,6 +190,23 @@ export default async function BlogPost({ params }: any) {
                     {blog?.description}
                   </p>
                 </div>
+
+                <Script id="atOptions" strategy="afterInteractive">
+                  {`
+                    atOptions = {
+                      'key' : '830f5f2b0ea44313207eab3dd203eb5d',
+                      'format' : 'iframe',
+                      'height' : 300,
+                      'width' : 160,
+                      'params' : {}
+                    };
+                  `}
+                </Script>
+                <Script
+                  src="//www.highperformanceformat.com/830f5f2b0ea44313207eab3dd203eb5d/invoke.js"
+                  strategy="afterInteractive"
+                />
+
                 <div className="border-b border-gray-200 dark:border-white/20">
                   {contentHtml && (
                     <div
@@ -165,6 +215,22 @@ export default async function BlogPost({ params }: any) {
                     ></div>
                   )}
                 </div>
+
+                <Script id="atOptions" strategy="afterInteractive">
+                  {`
+                    atOptions = {
+                      'key' : 'eaac30cd5348e798a58339af3d327b2b',
+                      'format' : 'iframe',
+                      'height' : 60,
+                      'width' : 468,
+                      'params' : {}
+                    };
+                  `}
+                </Script>
+                <Script
+                  src="//www.highperformanceformat.com/eaac30cd5348e798a58339af3d327b2b/invoke.js"
+                  strategy="afterInteractive"
+                />
                 <div className="flex flex-col gap-3 border-b border-gray-200 dark:border-white/20 pb-6">
                   <h4 className="font-semibold text-navyGray dark:text-white">
                     Quotes
