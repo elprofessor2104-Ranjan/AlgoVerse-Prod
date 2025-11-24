@@ -6,13 +6,11 @@ type BlogCardProps = {
 };
 
 const BlogCard = ({ blog }: BlogCardProps) => {
-
-
   return (
     <div className="shadow-card rounded-md hover:scale-[1.01]">
       <div className="relative w-full h-[240px] overflow-hidden rounded-t-md">
         <Link href={`/blog/${blog?.slug}`}>
-          {blog?.cover_image &&
+          {blog?.cover_image && (
             <Image
               src={blog?.cover_image}
               alt="cover-image"
@@ -20,7 +18,7 @@ const BlogCard = ({ blog }: BlogCardProps) => {
               height={240}
               className="w-full h-full object-cover rounded-t-md"
             />
-          }
+          )}
         </Link>
         <span className="absolute bottom-6 right-6 text-xs font-semibold w-fit p-1 px-2.5 text-black bg-white rounded-md capitalize">
           2 min Read
@@ -43,18 +41,11 @@ const BlogCard = ({ blog }: BlogCardProps) => {
           {blog.tag}
         </span>
         <Link href={`/blog/${blog?.slug}`}>
-          <h6 className="text-navyGray dark:text-white font-semibold line-clamp-2">{blog.title}</h6>
+          <h6 className="text-navyGray dark:text-white font-semibold line-clamp-2">
+            {blog.title}
+          </h6>
         </Link>
         <div className="flex items-center justify-between gap-3">
-          <div className="flex items-center gap-3">
-            <div className="flex items-center gap-6">
-              <div className="flex items-center gap-2">
-                <Image src={"/images/icon/message-black-icon.svg"} alt="message-icon" width={18} height={18} className="block dark:hidden"/>
-                <Image src={"/images/icon/message-white-icon.svg"} alt="message-icon" width={18} height={18} className="hidden dark:block"/>
-                <p className="text-sm text-navyGray dark:text-white/80">{blog.comment}</p>
-              </div>
-            </div>
-          </div>
           <div className="flex items-center gap-0.5">
             <svg
               stroke="currentColor"

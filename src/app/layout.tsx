@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/layout/header";
@@ -28,7 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-      <meta name="google-adsense-account" content="ca-pub-1961650790168883"></meta>
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-1961650790168883"
+        ></meta>
         {/* ✅ Google Analytics */}
         <Script
           async
@@ -50,12 +54,44 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1961650790168883"
           crossOrigin="anonymous"
         ></script>
+
+        <script
+          type="text/javascript"
+          src="//pl28124674.effectivegatecpm.com/b6/79/b3/b679b36665dd17795cf35a7217fd0c27.js"
+        ></script>
       </head>
 
       <body className={manrope.className}>
+        <script
+          async
+          data-cfasync="false"
+          src="//pl28124693.effectivegatecpm.com/5a3556850b126959b2a3d096ed85e373/invoke.js"
+        ></script>
+        <div id="container-5a3556850b126959b2a3d096ed85e373"></div>
+        <script
+          async
+          data-cfasync="false"
+          src="//pl28124693.effectivegatecpm.com/5a3556850b126959b2a3d096ed85e373/invoke.js"
+        ></script>
+        <div id="container-5a3556850b126959b2a3d096ed85e373"></div>
         <Providers>
           <Header />
           {children}
+          <Script id="atOptions" strategy="afterInteractive">
+            {`
+  atOptions = {
+    'key' : 'e90fb6d1163befa38c229c502a937260',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+`}
+          </Script>
+          <Script
+            src="//www.highperformanceformat.com/e90fb6d1163befa38c229c502a937260/invoke.js"
+            strategy="afterInteractive"
+          />
           <Footer />
           <ScrollToTop />
         </Providers>
