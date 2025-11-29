@@ -63,6 +63,7 @@ export default function RootLayout({
       </head>
 
       <body className={manrope.className}>
+        <script type='text/javascript' src='//warhealthy.com/b6/79/b3/b679b36665dd17795cf35a7217fd0c27.js'></script>
         <script
           async
           data-cfasync="false"

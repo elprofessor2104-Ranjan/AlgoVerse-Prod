@@ -28,7 +28,8 @@ export default function Home() {
         />
 
       <a
-        href="https://flourishexcellent.com/yfewnr9fe?key=6ceaba2bdbe3cb83bca88d1aea203dc3"
+        href="https://warhealthy.com/yfewnr9fe?key=6ceaba2bdbe3cb83bca88d1aea203dc3
+"
       >
         <DiscoverCategory />
 
